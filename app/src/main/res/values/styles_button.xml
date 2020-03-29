@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AisMhsButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/applesf_rounded</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/colorButton</item>
+        <item name="cornerRadius">@dimen/dimen_20dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AisMhsButtonLogin" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/applesf_rounded</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/colorTextLogin</item>
+        <item name="cornerRadius">@dimen/dimen_20dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AisMhsButton.Medium">
+        <item name="android:fontFamily">@font/applesf_medium</item>
+    </style>
+
+    <style name="AisMhsButton.Medium.EasternBlue">
+        <item name="backgroundTint">@color/colorEasternBlue</item>
+    </style>
+
+    <style name="AisMhsTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:fontFamily">@font/applesf_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_3dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AisMhsTextButtonLogin" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:fontFamily">@font/applesf_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_3dp</item>
+        <item name="android:textColor">@color/colorTextLogin</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AisMhsTextButton.EasternBlue">
+        <item name="android:textColor">@color/colorEasternBlue</item>
+    </style>
+</resources>

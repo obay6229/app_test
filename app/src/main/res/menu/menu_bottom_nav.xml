@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_lecture"
+        android:icon="@drawable/ic_lecturer"
+        android:title="@string/label_lecture"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_report"
+        android:icon="@drawable/ic_attendance"
+        android:title="@string/label_attendance"
+        app:showAsAction="ifRoom"/>
+</menu>

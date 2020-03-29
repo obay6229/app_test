@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTeal">#00BCD4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorStatusBar">#004567</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorButton">#09577E</color>
+    <color name="colorTitleToolbarPemulihan">#14668F</color>
+    <color name="colorHintTextBlack">#80000000</color>
+    <color name="colorWarmGrey40">#66979797</color>
+    <color name="colorEasternBlue">#1C8AC1</color>
+    <color name="colorLayoutMain">#1C8AC1</color>
+    <color name="colorBoulder">#7A7777</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorUnselectedItem">#C1CDC1</color>
+    <color name="colorTextLogin">#1C8AC1</color>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AisMhsTextView">
+        <item name="android:fontFamily">@font/applesf_regular</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AisMhsTextView.Medium">
+        <item name="android:fontFamily">@font/applesf_medium</item>
+    </style>
+
+    <style name="AisMhsTextView.Thin">
+        <item name="android:fontFamily">@font/applesf_thin</item>
+    </style>
+
+    <style name="AisMhsTextView.Thin.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AisMhsTextView.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AisMhsTextView.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded">
+        <item name="android:fontFamily">@font/applesf_rounded</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded.Bold.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded.Bold.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded.Bold.EasternBlue">
+        <item name="android:textColor">@color/colorEasternBlue</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded.Bold.LimeGreen">
+        <item name="android:textColor">@color/colorLimeGreen</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AisMhsTextView.Rounded.EasternBlue">
+        <item name="android:textColor">@color/colorEasternBlue</item>
+    </style>
+
+    <style name="AisMhsTextView.Medium.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AisMhsTextView.Medium.Login">
+        <item name="android:textColor">@color/colorTextLogin</item>
+    </style>
+
+    <style name="AisMhsTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/colorTextLogin</item>
+        <item name="hintTextColor">@color/colorTextLogin</item>
+        <item name="passwordToggleTint">@color/colorTextLogin</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/applesf_regular</item>
+    </style>
+
+    <style name="AisMhsTextInputLayoutOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="boxStrokeColor">@color/colorBlack</item>
+        <item name="boxStrokeWidth">@dimen/dimen_1dp</item>
+        <item name="hintTextColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AisMhsTextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/colorTextLogin</item>
+        <item name="android:colorControlNormal">@color/colorTextLogin</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/applesf_regular</item>
+    </style>
+
+    <style name="AisMhsTextInputEditTextBlack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/applesf_regular</item>
+    </style>
+
+    <color name="colorLime">#00FF00</color>
+    <color name="colorLimeGreen">#32CD32</color>
+</resources>

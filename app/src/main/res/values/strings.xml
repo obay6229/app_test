@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ais_dosen_v2</string>
+    <string name="label_welcome">Welcome !</string>
+    <string name="sample_name">Nasrul Hakiem</string>
+    <string name="sample_nim">100000000000</string>
+    <string name="label_lecture">Lecture</string>
+    <string name="label_attendance">Attendance</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_nim">NIM</string>
+    <string name="hint_pass">Password</string>
+    <string name="label_keep_login">Keep Me Logged In</string>
+    <string name="label_log_in">Login</string>
+    <string name="label_help">Don\'t want to input ID and Password continuously\?</string>
+    <string name="label_help_desc">Activate this feature so that you do not need to enter your ID and password again at the next log in.</string>
+    <string name="label_ok">Ok</string>
+    <string name="message_please_wait">Please Wait…</string>
+    <string name="title_empty">No Data</string>
+    <string name="message_empty">No Data to be shown</string>
+    <string name="label_error">Error</string>
+    <string name="error_message">Please check your internet connection</string>
+    <string name="label_lecture_absense">Perkuliahan dan Absensi</string>
+    <string name="label_academic_year">Tahun Akademik</string>
+</resources>

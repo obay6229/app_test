@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+    </style>
+
+    <style name="AppTheme.White">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.Login">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTextLogin</item>
+    </style>
+
+    <style name="EditProfile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="ResetPass.Black.MaterialTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:backgroundTint">@color/colorBlack</item>
+        <item name="boxStrokeColor">@color/colorBlack</item>
+        <item name="passwordToggleTint">@color/colorBlack</item>
+        <item name="android:colorAccent">@color/colorBlack</item>
+        <item name="hintTextAppearance">@style/ResetPass.Black.TextHint</item>
+        <item name="android:textSize">@dimen/dimen_text_14sp</item>
+    </style>
+
+    <style name="AppTheme.Black">
+        <item name="colorAccent">@color/colorBlack</item>
+    </style>
+
+    <style name="ResetPass.Black.TextHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:colorAccent">@color/colorBlack</item>
+    </style>
+
+    <style name="Login.White.TextHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="AisMhsBottomAppBar" parent="Widget.MaterialComponents.BottomAppBar.PrimarySurface">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:backgroundTint">@color/colorTeal</item>
+        <item name="fabCradleRoundedCornerRadius">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:textSize">@dimen/dimen_text_10sp</item>
+        <item name="itemIconSize">@dimen/dimen_14dp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active">
+        <item name="android:textSize">@dimen/dimen_text_12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="itemIconSize">@dimen/dimen_18dp</item>
+    </style>
+
+</resources>
