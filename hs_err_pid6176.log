@@ -1,0 +1,459 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 529904 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (t:/workspace/open/src/hotspot/share/memory/arena.cpp:198), pid=6176, tid=10796
+#
+# JRE version: Java(TM) SE Runtime Environment (10.0.2+13) (build 10.0.2+13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (10.0.2+13, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: org.jetbrains.kotlin.cli.jvm.K2JVMCompiler -Xallow-no-source-files -classpath C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-android-extensions-runtime\1.3.61\289bdf25b4886749e040c7a7d3aab8a57f85c631\kotlin-android-extensions-runtime-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.3.61\70dffc5f8ac5ea7c34f30deac5b9d8b1d48af066\kotlin-stdlib-jdk7-1.3.61.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e779d7468482f4d9768199c63565ff04\core-ktx-1.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\6d3a4a496c75cb90d3917fc3768052f6\anko-sdk15-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\7d2a8fbbf28fd8b998bd80ef22f4e022\jetified-anko-recyclerview-v7-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b74f53ca7f7946b6a71604c11e76d63f\jetified-anko-recyclerview-v7-coroutines-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\c85c2b87149d550ffcfb20d750fe80e7\jetified-anko-cardview-v7-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\267513d97432d73bc52313d48529bd80\anko-sqlite-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\02d8b034cf344d876b04c9870e559c4a\jetified-anko-appcompat-v7-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\aa62daaedd502fcb8eac67abc6572974\jetified-anko-support-v4-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e8326b2cf13d64a2516c9320292ee7f4\anko-appcompat-v7-commons-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\15b1e475fe3e1d1feb4cfda0ee264142\anko-support-v4-commons-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\6c21c34054206fcc9215d68361418bc1\anko-commons-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ff4dbae6f7a461e412fd2cad350dd381\preference-ktx-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\1292a9a869e88e2e03e5764c46c08294\circularimageview-4.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\4e9bdea6008ba172279da2a0d82ed551\platform-base-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0cdbd81e5b799c4855b143a98d39e05d\sqlite-base-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\78b235de6ea8b7b6e03853aa190979da\jetified-appcompatV7-base-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\df6aa3c02070c5d08947fc4b990d42f4\jetified-supportV4-base-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ae9781e32a45accd8981ba3b2329a8c9\jetified-commons-base-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\bd9086ea7aea61130ae59394b8fd91d9\jetified-kotlinx-coroutines-android-1.0.0.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-core\1.0.0\a33c4bf7581f71f01d4ed660b09ca199abbb44da\kotlinx-coroutines-core-1.0.0.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\2383be678e20e931586ad5a4e537700f\koin-androidx-viewmodel-2.0.1-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\7ac567695d60da776d0112e2477a95ea\koin-androidx-scope-2.0.1-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\458fa2fbd45d8bcc8785980df37f58ec\koin-android-2.0.1-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.koin\koin-core\2.0.1\86ae7f8b8abdbbdb513e472830962361e7a3d646\koin-core-2.0.1.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.3.61\4702105e97f7396ae41b113fdbdc180ec1eb1e36\kotlin-stdlib-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-core-common\1.0.0\5f7551ec1edc068deaa0397100a1f14f32270274\kotlinx-coroutines-core-common-1.0.0.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.3.61\65abb71d5afb850b68be03987b08e2c864ca3110\kotlin-stdlib-common-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e3d83e9a45cfd101cb678b8090937176\material-1.2.0-alpha05-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\1634040b254181d399f4bca06a23ba9e\preference-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\8ec246e1ad6bee47d9d3e76c54f0c68d\appcompat-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\751e0799f7d469e1cd15307a95b7b36d\lifecycle-reactivestreams-2.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\887d9666e62e2b49f6d8c122494c4dae\jetified-picasso-2.71828-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\f919a3f6f3c560dfff71c9cdcbf35ab7\jetified-rxbinding-2.1.1-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\df0d112d20269b9753bc5ecd09ccaf87\code-scanner-2.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\5a25df78219dac3fb0417d400be1fe1d\legacy-support-v4-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\200c973efd01763f55b8ddae6af6cc8d\legacy-support-core-ui-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\06563c9aa3628fcb57e2b3f17f761f18\cursoradapter-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\3215133f2ed9f3f184dca7ebc990e00e\appcompat-resources-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\16f815cf86458caf9185496e47841397\drawerlayout-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0035028758af257d655700fa081249f8\lifecycle-extensions-2.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\7ec772fdb8e3f099910a2875eda84082\glide-4.11.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\2798d54a09efda558cd329f36995ffc7\viewpager2-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ed88c77e54793c91b2ddde59c5ef8626\fragment-1.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b70fd7c9ca31cb833845f140cc372890\media-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\2fe35ca0521ab3c564880888df19ed6f\legacy-support-core-utils-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\4e5c881bea3243f0e25ea140c62e89b1\recyclerview-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ace0d54d0d98d2ddd01476892fde042a\coordinatorlayout-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e9bd2d711f1ddbd861062fc8cc14dc0e\transition-1.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\88460dfbc83f61a16d9d6c95b2bb0f64\vectordrawable-animated-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\cd593323a48fcee9a89444fbefa78e81\vectordrawable-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\8a0c5a7236f81635d711585f13521d71\viewpager-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e7bd30dfa8d37654dfc340e815bafccd\slidingpanelayout-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e1deea055052c7a3bff84117c2e46646\customview-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\8ea2b05546d5a1788b15266d14ef57dc\loader-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\bc30c1b859406da69b169a655ca288c6\activity-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\07480492bfb080c6eed7a0b225a71559\swiperefreshlayout-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ce8d8cbddf72dd40316cae54fb46dec0\asynclayoutinflater-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\8846ea42327b053f97436bbc2cc77386\core-1.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\639d6db6f4ce1f96aca0f78c8da1ea5f\versionedparcelable-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\androidx.collection\collection\1.1.0\1f27220b47669781457de0d600849a5de0e89909\collection-1.1.0.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\587c38241fdaf2fe9bd57fd3aeae67b8\lifecycle-process-2.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e2bad8dda616ef0d10b51b70de19465e\lifecycle-service-2.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\efb98a7b135931e9c641e8480e935048\lifecycle-runtime-2.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0a572148070f8fc54c12ed58e1c6a5d5\lifecycle-livedata-2.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\22cc35e7caf106989f17bceb2fdc0b52\lifecycle-viewmodel-savedstate-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\541a4e894ab36693fb3b4d7ec23845ed\lifecycle-livedata-core-2.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\81eb95c1e3bb22335d09012c161c71be\core-runtime-2.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\bc2237d092f0bfc7f7d230679f04834d\savedstate-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-common\2.1.0\b3152fc64428c9354344bd89848ecddc09b6f07e\core-common-2.1.0.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common\2.2.0\4ef09a745007778eef83b92f8f23987a8ea59496\lifecycle-common-2.2.0.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\da62a6838df1e71a7490ce7bb67823d6\lifecycle-viewmodel-2.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\8cc1958d75450f6124484f2b41f039d8\cardview-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\225dcdf89a5a84d5e36e1fdf10ef719b\exifinterface-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\01fbff945d43ea7470226d038108825f\gifdecoder-4.11.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\55864d490b6013ec3bd0e0bb8e13b396\documentfile-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\f3893e315acd51312539843f7707fb44\localbroadcastmanager-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b23ecddc3c72df7d4c3b4d045e82f711\print-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\56ba877b289f64e508d45408463ff91a\interpolator-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation\1.1.0\e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8\annotation-1.1.0.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\8e4370053e9104c3f8f23ada2f7de591\constraintlayout-1.1.3-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\androidx.constraintlayout\constraintlayout-solver\1.1.3\54abe9ffb22cc9019b0b6fcc10f185cc4e67b34e\constraintlayout-solver-1.1.3.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava2\2.5.0\928e129ee8a07ab97270523c48eec85ca16b4e3a\adapter-rxjava2-2.5.0.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\903f2a6110a5f090d9f58fc383b9562c\rxandroid-2.1.1-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\io.reactivex.rxjava2\rxjava\2.2.16\4b88484cd4d02954243fc0a1a0b0a7503ca769a0\rxjava-2.2.16.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.3\d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0\reactive-streams-1.0.3.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\06049574cd4d77e503e9fd2892a4fc6c\espresso-idling-resource-3.2.0-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.6.0\b6b5f2a7e969f34a6edcc1e4dbfab257704faa45\converter-gson-2.6.0.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.6.1\e09f83ea4eddf07fc956778dbda3c2d2b0b3ce7f\retrofit-2.6.1.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\logging-interceptor\3.12.1\f0304756a8d9f745fd7de3f82a32090cf5b71166\logging-interceptor-3.12.1.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.12.2\6ebea791309851e6cf95df2127731631fbba0a9d\okhttp-3.12.2.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.15.0\bc28b5a964c8f5721eb58ee3f3c47a9bcbf4f4d8\okio-1.15.0.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.5\f645ed69d595b24d4cf8b3fbb64cc505bede8829\gson-2.8.5.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\8071f233d468414d8b0f275045c70923\annotation-experimental-1.0.0-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\io.reactivex.rxjava2\rxkotlin\2.2.0\e1e2fbb13b1c7dc6d2d03b6221a016d1501ad5a9\rxkotlin-2.2.0.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\802a901629b6c6f43c00e975287a8d3f\jetified-easyvalidation-core-1.0.1-api.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\disklrucache\4.11.0\ed93d2e20549ad85f692d964788ec77520d78a8b\disklrucache-4.11.0.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\annotations\4.11.0\c57bae5a18147f8ae22f4da49baac875c6b6f84f\annotations-4.11.0.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.3\b640badcc97f18867c4dfd249ef8d20ec0204c07\core-3.3.3.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\f798dc48e9ae52a3d71d5b01aa8f397e\MultiStateView-2.1.1-api.jar;C:\Users\Abdul\AppData\Local\Android\Sdk\platforms\android-29\android.jar -d D:\Project\android\ais_dosen_v2-develop\app\build\tmp\kotlin-classes\debug -Xjava-source-roots=D:\Project\android\ais_dosen_v2-develop\app\build\generated\source\buildConfig\debug,D:\Project\android\ais_dosen_v2-develop\app\build\generated\not_namespaced_r_class_sources\debug\r -module-name app_debug -no-jdk -no-reflect -no-stdlib -Xcommon-sources=D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\MainDataStore.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\MainRepository.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\model\AcademicYearItem.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\model\LectureItem.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\remote\MainApi.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\remote\MainApiClient.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\MembershipDataStore.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\MembershipRepository.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\model\LoginItem.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\remote\MembershipApi.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\remote\MembershipApiClient.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\TokenInterceptor.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\ApiModule.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\features\MembershipModule.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\PreferenceModule.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\RxModule.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\UtilityModule.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\main\MainInteractor.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\main\MainUseCase.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\main\model\Lecture.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\membership\MembershipInteractor.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\membership\MembershipUseCase.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\membership\model\Login.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\BaseApplication.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\ApiResponse.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\ApiService.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\BaseRepository.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\ApiError.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\ApiErrorOperator.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\ApiException.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\RuntimeException.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\SingleApiErrorOperator.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\LocalDb.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\OkHttpClientFactory.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\WebApi.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\pref\PreferenceManagerImpl.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\pref\PrefManager.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\viewmodel\Result.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\viewmodel\SingleSchedulerTransformer.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\viewmodel\Utils.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\CommonUtils.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\ExtImageView.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\ExtValidator.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\key\AppConstants.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\key\UserPreferenceKey.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\validation\TextInputLayoutKtx.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\adapter\LectureAdapter.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\lecture\LectureActivity.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\main\MainActivity.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\main\PagerAdapter.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\main\pages\AttendanceFragment.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\main\pages\LectureFragment.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\membership\LoginActivity.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\viewmodel\MainViewModel.kt,D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\viewmodel\MembershipViewModel.kt -Xplugin=C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.intellij.deps\trove4j\1.0.20181211\216c2e14b070f334479d800987affe4054cd563f\trove4j-1.0.20181211.jar,C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-android-extensions\1.3.61\54ca7c214a5cd73cd887a42002266e25440097f2\kotlin-android-extensions-1.3.61.jar,C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-embeddable\1.3.61\c35c0833d5a1e3d229359758482c480306724618\kotlin-compiler-embeddable-1.3.61.jar,C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-daemon-embeddable\1.3.61\4de83e41a92c8395d89ab2e81d26b788ba163824\kotlin-daemon-embeddable-1.3.61.jar,C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-reflect\1.3.61\2e07c9a84c9e118efb70eede7e579fd663932122\kotlin-reflect-1.3.61.jar,C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-script-runtime\1.3.61\e5feb39c8de63dcbdc1154b34ca4413874231605\kotlin-script-runtime-1.3.61.jar,C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.3.61\65abb71d5afb850b68be03987b08e2c864ca3110\kotlin-stdlib-common-1.3.61.jar,C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.3.61\4702105e97f7396ae41b113fdbdc180ec1eb1e36\kotlin-stdlib-1.3.61.jar,C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar -P plugin:org.jetbrains.kotlin.android:configuration=rO0ABXeWAAAAAwAIZmVhdHVyZXMAAAABAA92aWV3cyxwYXJjZWxpemUAB3BhY2thZ2UAAAABABhjb20uZXhhbXBsZS5haXNfZG9zZW5fdjIAB3ZhcmlhbnQAAAABAD1tYWluO0Q6XFByb2plY3RcYW5kcm9pZFxhaXNfZG9zZW5fdjItZGV2ZWxvcFxhcHBcc3JjXG1haW5ccmVz D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\MainDataStore.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\MainRepository.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\model\AcademicYearItem.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\model\LectureItem.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\remote\MainApi.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\main\remote\MainApiClient.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\MembershipDataStore.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\MembershipRepository.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\model\LoginItem.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\remote\MembershipApi.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\membership\remote\MembershipApiClient.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\data\TokenInterceptor.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\ApiModule.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\features\MembershipModule.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\PreferenceModule.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\RxModule.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\di\UtilityModule.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\main\MainInteractor.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\main\MainUseCase.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\main\model\Lecture.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\membership\MembershipInteractor.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\membership\MembershipUseCase.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\model\membership\model\Login.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\BaseApplication.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\ApiResponse.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\ApiService.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\BaseRepository.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\ApiError.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\ApiErrorOperator.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\ApiException.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\RuntimeException.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\datastore\SingleApiErrorOperator.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\LocalDb.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\OkHttpClientFactory.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\data\WebApi.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\pref\PreferenceManagerImpl.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\pref\PrefManager.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\viewmodel\Result.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\viewmodel\SingleSchedulerTransformer.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\base\viewmodel\Utils.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\CommonUtils.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\ExtImageView.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\ExtValidator.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\key\AppConstants.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\key\UserPreferenceKey.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\utils\validation\TextInputLayoutKtx.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\adapter\LectureAdapter.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\lecture\LectureActivity.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\main\MainActivity.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\main\PagerAdapter.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\main\pages\AttendanceFragment.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\main\pages\LectureFragment.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\view\membership\LoginActivity.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\viewmodel\MainViewModel.kt D:\Project\android\ais_dosen_v2-develop\app\src\main\java\com\example\ais_dosen_v2\viewmodel\MembershipViewModel.kt
+
+Host: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+Time: Tue Mar 31 12:08:50 2020 SE Asia Standard Time elapsed time: 3 seconds (0d 0h 0m 3s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001d15a297000):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=10796, stack(0x00000036f2c00000,0x00000036f2d00000)]
+
+
+Current CompileTask:
+C2:   3601 3169       4       org.jetbrains.kotlin.parsing.AbstractKotlinParsing::tt (10 bytes)
+
+Stack: [0x00000036f2c00000,0x00000036f2d00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5a01a9]
+V  [jvm.dll+0x6bcf31]
+V  [jvm.dll+0x6be126]
+V  [jvm.dll+0x6be7b3]
+V  [jvm.dll+0x234978]
+V  [jvm.dll+0xbb69c]
+V  [jvm.dll+0xbbbac]
+V  [jvm.dll+0x1ff772]
+V  [jvm.dll+0x53675d]
+V  [jvm.dll+0x53a237]
+V  [jvm.dll+0x1ffd42]
+V  [jvm.dll+0x1ff116]
+V  [jvm.dll+0x17c94b]
+V  [jvm.dll+0x20c8dd]
+V  [jvm.dll+0x20b6a6]
+V  [jvm.dll+0x68b7ff]
+V  [jvm.dll+0x59f4b0]
+C  [msvcr120.dll+0x24f7f]
+C  [msvcr120.dll+0x25126]
+C  [KERNEL32.DLL+0x17bd4]
+C  [ntdll.dll+0x6ced1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001d15ac5d8d0, length=11, elements={
+0x000001d136fb5800, 0x000001d15a295000, 0x000001d15aaa8800, 0x000001d15aaf6800,
+0x000001d15aaf9000, 0x000001d15a297000, 0x000001d15a29a000, 0x000001d15a29e000,
+0x000001d15ab0c000, 0x000001d15aca0000, 0x000001d15acaa800
+}
+
+Java Threads: ( => current thread )
+  0x000001d136fb5800 JavaThread "main" [_thread_in_vm, id=1976, stack(0x00000036f1b00000,0x00000036f1c00000)]
+  0x000001d15a295000 JavaThread "Reference Handler" daemon [_thread_blocked, id=4836, stack(0x00000036f2800000,0x00000036f2900000)]
+  0x000001d15aaa8800 JavaThread "Finalizer" daemon [_thread_blocked, id=14856, stack(0x00000036f2900000,0x00000036f2a00000)]
+  0x000001d15aaf6800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=14132, stack(0x00000036f2a00000,0x00000036f2b00000)]
+  0x000001d15aaf9000 JavaThread "Attach Listener" daemon [_thread_blocked, id=6316, stack(0x00000036f2b00000,0x00000036f2c00000)]
+=>0x000001d15a297000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=10796, stack(0x00000036f2c00000,0x00000036f2d00000)]
+  0x000001d15a29a000 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=9932, stack(0x00000036f2d00000,0x00000036f2e00000)]
+  0x000001d15a29e000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=11708, stack(0x00000036f2e00000,0x00000036f2f00000)]
+  0x000001d15ab0c000 JavaThread "Sweeper thread" daemon [_thread_blocked, id=13128, stack(0x00000036f2f00000,0x00000036f3000000)]
+  0x000001d15aca0000 JavaThread "Service Thread" daemon [_thread_blocked, id=14872, stack(0x00000036f3000000,0x00000036f3100000)]
+  0x000001d15acaa800 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=11504, stack(0x00000036f3100000,0x00000036f3200000)]
+
+Other Threads:
+  0x000001d15a289000 VMThread "VM Thread" [stack: 0x00000036f2700000,0x00000036f2800000] [id=13356]
+  0x000001d15acab800 WatcherThread [stack: 0x00000036f3200000,0x00000036f3300000] [id=15240]
+  0x000001d136f3b000 GCTaskThread "GC Thread#0" [stack: 0x00000036f1c00000,0x00000036f1d00000] [id=10584]
+  0x000001d136f3c000 GCTaskThread "GC Thread#1" [stack: 0x00000036f1d00000,0x00000036f1e00000] [id=936]
+  0x000001d136fd0800 GCTaskThread "GC Thread#2" [stack: 0x00000036f1e00000,0x00000036f1f00000] [id=14852]
+  0x000001d136fd2800 GCTaskThread "GC Thread#3" [stack: 0x00000036f1f00000,0x00000036f2000000] [id=9028]
+  0x000001d137047000 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000036f2000000,0x00000036f2100000] [id=1488]
+  0x000001d13704a000 ConcurrentGCThread "G1 Conc#0" [stack: 0x00000036f2100000,0x00000036f2200000] [id=10928]
+  0x000001d15a11b000 ConcurrentGCThread "G1 Refine#0" [stack: 0x00000036f2200000,0x00000036f2300000] [id=11140]
+  0x000001d15a11c000 ConcurrentGCThread "G1 Refine#1" [stack: 0x00000036f2300000,0x00000036f2400000] [id=6056]
+  0x000001d15a11d000 ConcurrentGCThread "G1 Refine#2" [stack: 0x00000036f2400000,0x00000036f2500000] [id=11328]
+  0x000001d15a11e000 ConcurrentGCThread "G1 Refine#3" [stack: 0x00000036f2500000,0x00000036f2600000] [id=4052]
+  0x000001d15a121800 ConcurrentGCThread "G1 Young RemSet Sampling" [stack: 0x00000036f2600000,0x00000036f2700000] [id=2780]
+
+Threads with active compile tasks:
+C2 CompilerThread03169       4       org.jetbrains.kotlin.parsing.AbstractKotlinParsing::tt (10 bytes)
+C2 CompilerThread13192       4       org.jetbrains.kotlin.parsing.SemanticWhitespaceAwarePsiBuilderImpl::getTokenType (22 bytes)
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000082000000, size: 2016 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ garbage-first heap   total 129024K, used 50753K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 33 young (33792K), 3 survivors (3072K)
+ Metaspace       used 41787K, capacity 42226K, committed 42700K, reserved 1087488K
+  class space    used 4837K, capacity 4995K, committed 5068K, reserved 1048576K
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, A=archive, TS=gc time stamp, AC=allocation context, TAMS=top-at-mark-start (previous, next)
+|   0|0x0000000082000000, 0x0000000082100000, 0x0000000082100000|100%|HS|  |TS  0|AC  0|TAMS 0x0000000082100000, 0x0000000082100000|
+|   1|0x0000000082100000, 0x0000000082200000, 0x0000000082200000|100%|HC|  |TS  0|AC  0|TAMS 0x0000000082200000, 0x0000000082200000|
+|   2|0x0000000082200000, 0x0000000082300000, 0x0000000082300000|100%|HC|  |TS  0|AC  0|TAMS 0x0000000082300000, 0x0000000082300000|
+|   3|0x0000000082300000, 0x0000000082400000, 0x0000000082400000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082400000, 0x0000000082400000|
+|   4|0x0000000082400000, 0x0000000082500000, 0x0000000082500000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082500000, 0x0000000082500000|
+|   5|0x0000000082500000, 0x0000000082600000, 0x0000000082600000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082600000, 0x0000000082600000|
+|   6|0x0000000082600000, 0x0000000082700000, 0x0000000082700000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082700000, 0x0000000082700000|
+|   7|0x0000000082700000, 0x0000000082800000, 0x0000000082800000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082800000, 0x0000000082800000|
+|   8|0x0000000082800000, 0x0000000082900000, 0x0000000082900000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082900000, 0x0000000082900000|
+|   9|0x0000000082900000, 0x00000000829b9000, 0x0000000082a00000| 72%| O|  |TS  0|AC  0|TAMS 0x00000000829b9000, 0x00000000829b9000|
+|  10|0x0000000082a00000, 0x0000000082b00000, 0x0000000082b00000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082b00000, 0x0000000082b00000|
+|  11|0x0000000082b00000, 0x0000000082c00000, 0x0000000082c00000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082c00000, 0x0000000082c00000|
+|  12|0x0000000082c00000, 0x0000000082d00000, 0x0000000082d00000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082d00000, 0x0000000082d00000|
+|  13|0x0000000082d00000, 0x0000000082e00000, 0x0000000082e00000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082e00000, 0x0000000082e00000|
+|  14|0x0000000082e00000, 0x0000000082f00000, 0x0000000082f00000|100%| O|  |TS  0|AC  0|TAMS 0x0000000082f00000, 0x0000000082f00000|
+|  15|0x0000000082f00000, 0x0000000083000000, 0x0000000083000000|100%| O|  |TS  0|AC  0|TAMS 0x0000000083000000, 0x0000000083000000|
+|  16|0x0000000083000000, 0x0000000083100000, 0x0000000083100000|100%|HS|  |TS  0|AC  0|TAMS 0x0000000083000000, 0x0000000083000000|
+|  17|0x0000000083100000, 0x0000000083200000, 0x0000000083200000|100%|HC|  |TS  0|AC  0|TAMS 0x0000000083100000, 0x0000000083100000|
+|  18|0x0000000083200000, 0x0000000083200000, 0x0000000083300000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083200000, 0x0000000083200000|
+|  19|0x0000000083300000, 0x0000000083300000, 0x0000000083400000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083300000, 0x0000000083300000|
+|  20|0x0000000083400000, 0x0000000083400000, 0x0000000083500000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083400000, 0x0000000083400000|
+|  21|0x0000000083500000, 0x0000000083500000, 0x0000000083600000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083500000, 0x0000000083500000|
+|  22|0x0000000083600000, 0x0000000083600000, 0x0000000083700000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083600000, 0x0000000083600000|
+|  23|0x0000000083700000, 0x0000000083700000, 0x0000000083800000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083700000, 0x0000000083700000|
+|  24|0x0000000083800000, 0x0000000083800000, 0x0000000083900000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083800000, 0x0000000083800000|
+|  25|0x0000000083900000, 0x0000000083900000, 0x0000000083a00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083900000, 0x0000000083900000|
+|  26|0x0000000083a00000, 0x0000000083a00000, 0x0000000083b00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083a00000, 0x0000000083a00000|
+|  27|0x0000000083b00000, 0x0000000083b00000, 0x0000000083c00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083b00000, 0x0000000083b00000|
+|  28|0x0000000083c00000, 0x0000000083c00000, 0x0000000083d00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083c00000, 0x0000000083c00000|
+|  29|0x0000000083d00000, 0x0000000083d00000, 0x0000000083e00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083d00000, 0x0000000083d00000|
+|  30|0x0000000083e00000, 0x0000000083e00000, 0x0000000083f00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083e00000, 0x0000000083e00000|
+|  31|0x0000000083f00000, 0x0000000083f00000, 0x0000000084000000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000083f00000, 0x0000000083f00000|
+|  32|0x0000000084000000, 0x0000000084000000, 0x0000000084100000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084000000, 0x0000000084000000|
+|  33|0x0000000084100000, 0x0000000084100000, 0x0000000084200000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084100000, 0x0000000084100000|
+|  34|0x0000000084200000, 0x0000000084200000, 0x0000000084300000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084200000, 0x0000000084200000|
+|  35|0x0000000084300000, 0x0000000084300000, 0x0000000084400000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084300000, 0x0000000084300000|
+|  36|0x0000000084400000, 0x0000000084400000, 0x0000000084500000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084400000, 0x0000000084400000|
+|  37|0x0000000084500000, 0x0000000084500000, 0x0000000084600000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084500000, 0x0000000084500000|
+|  38|0x0000000084600000, 0x0000000084600000, 0x0000000084700000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084600000, 0x0000000084600000|
+|  39|0x0000000084700000, 0x0000000084700000, 0x0000000084800000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084700000, 0x0000000084700000|
+|  40|0x0000000084800000, 0x0000000084800000, 0x0000000084900000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084800000, 0x0000000084800000|
+|  41|0x0000000084900000, 0x0000000084900000, 0x0000000084a00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084900000, 0x0000000084900000|
+|  42|0x0000000084a00000, 0x0000000084a00000, 0x0000000084b00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084a00000, 0x0000000084a00000|
+|  43|0x0000000084b00000, 0x0000000084b00000, 0x0000000084c00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084b00000, 0x0000000084b00000|
+|  44|0x0000000084c00000, 0x0000000084c00000, 0x0000000084d00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084c00000, 0x0000000084c00000|
+|  45|0x0000000084d00000, 0x0000000084d00000, 0x0000000084e00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084d00000, 0x0000000084d00000|
+|  46|0x0000000084e00000, 0x0000000084e00000, 0x0000000084f00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084e00000, 0x0000000084e00000|
+|  47|0x0000000084f00000, 0x0000000084f00000, 0x0000000085000000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000084f00000, 0x0000000084f00000|
+|  48|0x0000000085000000, 0x0000000085000000, 0x0000000085100000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085000000, 0x0000000085000000|
+|  49|0x0000000085100000, 0x0000000085100000, 0x0000000085200000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085100000, 0x0000000085100000|
+|  50|0x0000000085200000, 0x0000000085200000, 0x0000000085300000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085200000, 0x0000000085200000|
+|  51|0x0000000085300000, 0x0000000085300000, 0x0000000085400000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085300000, 0x0000000085300000|
+|  52|0x0000000085400000, 0x0000000085400000, 0x0000000085500000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085400000, 0x0000000085400000|
+|  53|0x0000000085500000, 0x0000000085500000, 0x0000000085600000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085500000, 0x0000000085500000|
+|  54|0x0000000085600000, 0x0000000085600000, 0x0000000085700000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085600000, 0x0000000085600000|
+|  55|0x0000000085700000, 0x0000000085700000, 0x0000000085800000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085700000, 0x0000000085700000|
+|  56|0x0000000085800000, 0x0000000085800000, 0x0000000085900000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085800000, 0x0000000085800000|
+|  57|0x0000000085900000, 0x0000000085900000, 0x0000000085a00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085900000, 0x0000000085900000|
+|  58|0x0000000085a00000, 0x0000000085a00000, 0x0000000085b00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085a00000, 0x0000000085a00000|
+|  59|0x0000000085b00000, 0x0000000085b00000, 0x0000000085c00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085b00000, 0x0000000085b00000|
+|  60|0x0000000085c00000, 0x0000000085c00000, 0x0000000085d00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085c00000, 0x0000000085c00000|
+|  61|0x0000000085d00000, 0x0000000085d00000, 0x0000000085e00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085d00000, 0x0000000085d00000|
+|  62|0x0000000085e00000, 0x0000000085e00000, 0x0000000085f00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085e00000, 0x0000000085e00000|
+|  63|0x0000000085f00000, 0x0000000085f00000, 0x0000000086000000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000085f00000, 0x0000000085f00000|
+|  64|0x0000000086000000, 0x0000000086000000, 0x0000000086100000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086000000, 0x0000000086000000|
+|  65|0x0000000086100000, 0x0000000086100000, 0x0000000086200000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086100000, 0x0000000086100000|
+|  66|0x0000000086200000, 0x0000000086200000, 0x0000000086300000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086200000, 0x0000000086200000|
+|  67|0x0000000086300000, 0x0000000086300000, 0x0000000086400000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086300000, 0x0000000086300000|
+|  68|0x0000000086400000, 0x0000000086400000, 0x0000000086500000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086400000, 0x0000000086400000|
+|  69|0x0000000086500000, 0x0000000086500000, 0x0000000086600000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086500000, 0x0000000086500000|
+|  70|0x0000000086600000, 0x0000000086600000, 0x0000000086700000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086600000, 0x0000000086600000|
+|  71|0x0000000086700000, 0x0000000086700000, 0x0000000086800000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086700000, 0x0000000086700000|
+|  72|0x0000000086800000, 0x0000000086800000, 0x0000000086900000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086800000, 0x0000000086800000|
+|  73|0x0000000086900000, 0x0000000086900000, 0x0000000086a00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086900000, 0x0000000086900000|
+|  74|0x0000000086a00000, 0x0000000086a00000, 0x0000000086b00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086a00000, 0x0000000086a00000|
+|  75|0x0000000086b00000, 0x0000000086b00000, 0x0000000086c00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086b00000, 0x0000000086b00000|
+|  76|0x0000000086c00000, 0x0000000086c00000, 0x0000000086d00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086c00000, 0x0000000086c00000|
+|  77|0x0000000086d00000, 0x0000000086d00000, 0x0000000086e00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086d00000, 0x0000000086d00000|
+|  78|0x0000000086e00000, 0x0000000086e00000, 0x0000000086f00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086e00000, 0x0000000086e00000|
+|  79|0x0000000086f00000, 0x0000000086f00000, 0x0000000087000000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000086f00000, 0x0000000086f00000|
+|  80|0x0000000087000000, 0x0000000087000000, 0x0000000087100000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087000000, 0x0000000087000000|
+|  81|0x0000000087100000, 0x0000000087100000, 0x0000000087200000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087100000, 0x0000000087100000|
+|  82|0x0000000087200000, 0x0000000087200000, 0x0000000087300000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087200000, 0x0000000087200000|
+|  83|0x0000000087300000, 0x0000000087300000, 0x0000000087400000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087300000, 0x0000000087300000|
+|  84|0x0000000087400000, 0x0000000087400000, 0x0000000087500000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087400000, 0x0000000087400000|
+|  85|0x0000000087500000, 0x0000000087500000, 0x0000000087600000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087500000, 0x0000000087500000|
+|  86|0x0000000087600000, 0x0000000087600000, 0x0000000087700000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087600000, 0x0000000087600000|
+|  87|0x0000000087700000, 0x0000000087700000, 0x0000000087800000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087700000, 0x0000000087700000|
+|  88|0x0000000087800000, 0x0000000087800000, 0x0000000087900000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087800000, 0x0000000087800000|
+|  89|0x0000000087900000, 0x0000000087900000, 0x0000000087a00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087900000, 0x0000000087900000|
+|  90|0x0000000087a00000, 0x0000000087a00000, 0x0000000087b00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087a00000, 0x0000000087a00000|
+|  91|0x0000000087b00000, 0x0000000087b00000, 0x0000000087c00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087b00000, 0x0000000087b00000|
+|  92|0x0000000087c00000, 0x0000000087c00000, 0x0000000087d00000|  0%| F|  |TS  0|AC  0|TAMS 0x0000000087c00000, 0x0000000087c00000|
+|  93|0x0000000087d00000, 0x0000000087e00000, 0x0000000087e00000|100%| E|  |TS  0|AC  0|TAMS 0x0000000087d00000, 0x0000000087d00000|
+|  94|0x0000000087e00000, 0x0000000087f00000, 0x0000000087f00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000087e00000, 0x0000000087e00000|
+|  95|0x0000000087f00000, 0x0000000088000000, 0x0000000088000000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000087f00000, 0x0000000087f00000|
+|  96|0x0000000088000000, 0x0000000088100000, 0x0000000088100000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088000000, 0x0000000088000000|
+|  97|0x0000000088100000, 0x0000000088200000, 0x0000000088200000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088100000, 0x0000000088100000|
+|  98|0x0000000088200000, 0x00000000882d77f0, 0x0000000088300000| 84%| S|CS|TS  0|AC  0|TAMS 0x0000000088200000, 0x0000000088200000|
+|  99|0x0000000088300000, 0x0000000088400000, 0x0000000088400000|100%| S|CS|TS  0|AC  0|TAMS 0x0000000088300000, 0x0000000088300000|
+| 100|0x0000000088400000, 0x0000000088500000, 0x0000000088500000|100%| S|CS|TS  0|AC  0|TAMS 0x0000000088400000, 0x0000000088400000|
+| 101|0x0000000088500000, 0x0000000088600000, 0x0000000088600000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088500000, 0x0000000088500000|
+| 102|0x0000000088600000, 0x0000000088700000, 0x0000000088700000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088600000, 0x0000000088600000|
+| 103|0x0000000088700000, 0x0000000088800000, 0x0000000088800000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088700000, 0x0000000088700000|
+| 104|0x0000000088800000, 0x0000000088900000, 0x0000000088900000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088800000, 0x0000000088800000|
+| 105|0x0000000088900000, 0x0000000088a00000, 0x0000000088a00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088900000, 0x0000000088900000|
+| 106|0x0000000088a00000, 0x0000000088b00000, 0x0000000088b00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088a00000, 0x0000000088a00000|
+| 107|0x0000000088b00000, 0x0000000088c00000, 0x0000000088c00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088b00000, 0x0000000088b00000|
+| 108|0x0000000088c00000, 0x0000000088d00000, 0x0000000088d00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088c00000, 0x0000000088c00000|
+| 109|0x0000000088d00000, 0x0000000088e00000, 0x0000000088e00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088d00000, 0x0000000088d00000|
+| 110|0x0000000088e00000, 0x0000000088f00000, 0x0000000088f00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088e00000, 0x0000000088e00000|
+| 111|0x0000000088f00000, 0x0000000089000000, 0x0000000089000000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000088f00000, 0x0000000088f00000|
+| 112|0x0000000089000000, 0x0000000089100000, 0x0000000089100000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089000000, 0x0000000089000000|
+| 113|0x0000000089100000, 0x0000000089200000, 0x0000000089200000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089100000, 0x0000000089100000|
+| 114|0x0000000089200000, 0x0000000089300000, 0x0000000089300000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089200000, 0x0000000089200000|
+| 115|0x0000000089300000, 0x0000000089400000, 0x0000000089400000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089300000, 0x0000000089300000|
+| 116|0x0000000089400000, 0x0000000089500000, 0x0000000089500000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089400000, 0x0000000089400000|
+| 117|0x0000000089500000, 0x0000000089600000, 0x0000000089600000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089500000, 0x0000000089500000|
+| 118|0x0000000089600000, 0x0000000089700000, 0x0000000089700000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089600000, 0x0000000089600000|
+| 119|0x0000000089700000, 0x0000000089800000, 0x0000000089800000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089700000, 0x0000000089700000|
+| 120|0x0000000089800000, 0x0000000089900000, 0x0000000089900000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089800000, 0x0000000089800000|
+| 121|0x0000000089900000, 0x0000000089a00000, 0x0000000089a00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089900000, 0x0000000089900000|
+| 122|0x0000000089a00000, 0x0000000089b00000, 0x0000000089b00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089a00000, 0x0000000089a00000|
+| 123|0x0000000089b00000, 0x0000000089c00000, 0x0000000089c00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089b00000, 0x0000000089b00000|
+| 124|0x0000000089c00000, 0x0000000089d00000, 0x0000000089d00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089c00000, 0x0000000089c00000|
+| 125|0x0000000089d00000, 0x0000000089e00000, 0x0000000089e00000|100%| E|CS|TS  0|AC  0|TAMS 0x0000000089d00000, 0x0000000089d00000|
+
+Card table byte_map: [0x000001d1534f0000,0x000001d1538e0000] byte_map_base: 0x000001d1530e0000
+
+Marking Bits (Prev, Next): (CMBitMap*) 0x000001d137045400, (CMBitMap*) 0x000001d137045438
+ Prev Bits: [0x000001d153cd0000, 0x000001d155c50000)
+ Next Bits: [0x000001d155c50000, 0x000001d157bd0000)
+
+Polling page: 0x000001d136e30000
+
+CodeHeap 'non-profiled nmethods': size=120064Kb used=1348Kb max_used=1348Kb free=118715Kb
+ bounds [0x000001d14b590000, 0x000001d14b800000, 0x000001d152ad0000]
+CodeHeap 'profiled nmethods': size=120000Kb used=6823Kb max_used=6823Kb free=113176Kb
+ bounds [0x000001d144060000, 0x000001d144710000, 0x000001d14b590000]
+CodeHeap 'non-nmethods': size=5696Kb used=1143Kb max_used=1200Kb free=4553Kb
+ bounds [0x000001d143ad0000, 0x000001d143d40000, 0x000001d144060000]
+ total_blobs=4599 nmethods=3446 adapters=381
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 3.498 Thread 0x000001d15a29e000 3348       2       gnu.trove.THashSet::add (41 bytes)
+Event: 3.498 Thread 0x000001d15a29e000 nmethod 3348 0x000001d1446d1b90 code [0x000001d1446d1d60, 0x000001d1446d2020]
+Event: 3.498 Thread 0x000001d15a29e000 3349       2       org.jetbrains.kotlin.com.intellij.openapi.vfs.VirtualFile::getNameWithoutExtension (21 bytes)
+Event: 3.498 Thread 0x000001d15a29e000 nmethod 3349 0x000001d1446d2190 code [0x000001d1446d2380, 0x000001d1446d2580]
+Event: 3.498 Thread 0x000001d15a29e000 3350       2       org.jetbrains.kotlin.com.intellij.openapi.util.io.FileUtilRt::getNameWithoutExtension (49 bytes)
+Event: 3.498 Thread 0x000001d15a29e000 nmethod 3350 0x000001d1446d2690 code [0x000001d1446d2880, 0x000001d1446d2ab0]
+Event: 3.505 Thread 0x000001d15a29e000 3351       2       org.jetbrains.kotlin.name.FqName::shortName (17 bytes)
+Event: 3.506 Thread 0x000001d15a29e000 nmethod 3351 0x000001d1446d2c10 code [0x000001d1446d2de0, 0x000001d1446d2fa0]
+Event: 3.530 Thread 0x000001d15a29e000 3352       2       kotlin.LazyKt__LazyJVMKt::lazy (102 bytes)
+Event: 3.530 Thread 0x000001d15a29e000 nmethod 3352 0x000001d1446d3090 code [0x000001d1446d32c0, 0x000001d1446d3980]
+
+GC Heap History (8 events):
+Event: 0.426 GC heap before
+{Heap before GC invocations=0 (full 0):
+ garbage-first heap   total 129024K, used 17408K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 14 young (14336K), 0 survivors (0K)
+ Metaspace       used 9897K, capacity 10041K, committed 10240K, reserved 1058816K
+  class space    used 851K, capacity 902K, committed 1024K, reserved 1048576K
+}
+Event: 0.429 GC heap after
+{Heap after GC invocations=1 (full 0):
+ garbage-first heap   total 129024K, used 5479K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 2 young (2048K), 2 survivors (2048K)
+ Metaspace       used 9897K, capacity 10041K, committed 10240K, reserved 1058816K
+  class space    used 851K, capacity 902K, committed 1024K, reserved 1048576K
+}
+Event: 1.328 GC heap before
+{Heap before GC invocations=1 (full 0):
+ garbage-first heap   total 129024K, used 50535K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 47 young (48128K), 2 survivors (2048K)
+ Metaspace       used 20865K, capacity 21135K, committed 21248K, reserved 1069056K
+  class space    used 2163K, capacity 2252K, committed 2304K, reserved 1048576K
+}
+Event: 1.340 GC heap after
+{Heap after GC invocations=2 (full 0):
+ garbage-first heap   total 129024K, used 9575K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 6 young (6144K), 6 survivors (6144K)
+ Metaspace       used 20865K, capacity 21135K, committed 21248K, reserved 1069056K
+  class space    used 2163K, capacity 2252K, committed 2304K, reserved 1048576K
+}
+Event: 2.405 GC heap before
+{Heap before GC invocations=3 (full 0):
+ garbage-first heap   total 129024K, used 64871K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 54 young (55296K), 6 survivors (6144K)
+ Metaspace       used 29680K, capacity 30004K, committed 30208K, reserved 1077248K
+  class space    used 3152K, capacity 3295K, committed 3328K, reserved 1048576K
+}
+Event: 2.423 GC heap after
+{Heap after GC invocations=4 (full 0):
+ garbage-first heap   total 129024K, used 16221K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 7 young (7168K), 7 survivors (7168K)
+ Metaspace       used 29680K, capacity 30004K, committed 30208K, reserved 1077248K
+  class space    used 3152K, capacity 3295K, committed 3328K, reserved 1048576K
+}
+Event: 2.773 GC heap before
+{Heap before GC invocations=4 (full 0):
+ garbage-first heap   total 129024K, used 40797K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 32 young (32768K), 7 survivors (7168K)
+ Metaspace       used 35222K, capacity 35532K, committed 35840K, reserved 1081344K
+  class space    used 4059K, capacity 4198K, committed 4224K, reserved 1048576K
+}
+Event: 2.784 GC heap after
+{Heap after GC invocations=5 (full 0):
+ garbage-first heap   total 129024K, used 19009K [0x0000000082000000, 0x0000000100000000)
+  region size 1024K, 3 young (3072K), 3 survivors (3072K)
+ Metaspace       used 35222K, capacity 35532K, committed 35840K, reserved 1081344K
+  class space    used 4059K, capacity 4198K, committed 4224K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 3.276 Thread 0x000001d136fb5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001d14b6c9a8c method=org.jetbrains.kotlin.parsing.SemanticWhitespaceAwarePsiBuilderImpl.getJoinedTokenType(Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;I)Lorg/jetbrains/kotlin/com/in
+Event: 3.276 Thread 0x000001d136fb5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001d14b6d194c method=org.jetbrains.kotlin.parsing.AbstractKotlinParsing.tt()Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType; @ 4 c2
+Event: 3.276 Thread 0x000001d136fb5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001d14b6d194c method=org.jetbrains.kotlin.parsing.AbstractKotlinParsing.tt()Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType; @ 4 c2
+Event: 3.276 Thread 0x000001d136fb5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001d14b6d194c method=org.jetbrains.kotlin.parsing.AbstractKotlinParsing.tt()Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType; @ 4 c2
+Event: 3.298 Thread 0x000001d136fb5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001d14b6ca6e0 method=org.jetbrains.kotlin.com.intellij.lang.impl.PsiBuilderImpl.skipWhitespace()V @ 51 c2
+Event: 3.326 Thread 0x000001d136fb5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001d14b6d558c method=org.jetbrains.kotlin.parsing.AbstractKotlinParsing.at(Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;)Z @ 87 c2
+Event: 3.334 Thread 0x000001d136fb5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001d14b6d4b58 method=org.jetbrains.kotlin.parsing.AbstractKotlinParsing.at(Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;)Z @ 49 c2
+Event: 3.345 Thread 0x000001d136fb5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001d14b6d4b58 method=org.jetbrains.kotlin.parsing.AbstractKotlinParsing.at(Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;)Z @ 49 c2
+Event: 3.345 Thread 0x000001d136fb5800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001d14b6d8c04 method=org.jetbrains.kotlin.parsing.SemanticWhitespaceAwarePsiBuilderImpl.getJoinedTokenType(Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;I)Lorg/jetbrains/kotlin/com/in
+Event: 3.345 Thread 0x000001d136fb5800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000001d14b6d4b58 method=org.jetbrains.kotlin.parsing.AbstractKotlinParsing.at(Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;)Z @ 49 c2
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 1.497 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x00000000898fa850}: java.lang.Object.lambda$static$0(I)[Lorg/jetbrains/kotlin/com/intellij/psi/PsiAnnotation;> (0x00000000898fa850) thrown at [t:/workspace/open/src/hotspot/share/interpreter/linkResolver.cpp, li
+Event: 1.499 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x000000008970dc38}: java.lang.invoke.DirectMethodHandle$Holder.invokeInterface(Ljava/lang/Object;Ljava/lang/Object;)V> (0x000000008970dc38) thrown at [t:/workspace/open/src/hotspot/share/interpreter/linkResolver
+Event: 1.506 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x000000008977b2c8}: java.lang.invoke.DirectMethodHandle$Holder.invokeInterface(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;> (0x000000008977b2c8) thrown at [t:/workspace/open/src/hotspot/share/interpr
+Event: 1.575 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x0000000089356688}: java.lang.Object.lambda$static$0(I)[Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;> (0x0000000089356688) thrown at [t:/workspace/open/src/hotspot/share/interpreter/linkResolver.cpp, line 
+Event: 1.581 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x00000000893b0bf0}: java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(Ljava/lang/Object;Ljava/lang/Object;)I> (0x00000000893b0bf0) thrown at [t:/workspace/open/src/hotspot/share/interpreter/linkResolver.c
+Event: 2.307 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x00000000872b29f0}: java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;> (0x00000000872b29f0) thrown at [t:/workspace/open/src/hotsp
+Event: 3.129 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x00000000890522d8}: java.lang.Object.lambda$static$0(I)[Lorg/jetbrains/kotlin/psi/KtExpression;> (0x00000000890522d8) thrown at [t:/workspace/open/src/hotspot/share/interpreter/linkResolver.cpp, line 741]
+Event: 3.220 Thread 0x000001d136fb5800 Implicit null exception at 0x000001d14b6c624c to 0x000001d14b6c632e
+Event: 3.420 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x0000000088a59f08}: java.lang.Object.lambda$static$0(I)[Lorg/jetbrains/kotlin/psi/KtDeclaration;> (0x0000000088a59f08) thrown at [t:/workspace/open/src/hotspot/share/interpreter/linkResolver.cpp, line 741]
+Event: 3.444 Thread 0x000001d136fb5800 Exception <a 'java/lang/NoSuchMethodError'{0x0000000088961998}: java.lang.Object.lambda$static$0(I)[Lorg/jetbrains/kotlin/psi/KtTypeElement;> (0x0000000088961998) thrown at [t:/workspace/open/src/hotspot/share/interpreter/linkResolver.cpp, line 741]
+
+Events (10 events):
+Event: 3.535 loading class org/jetbrains/kotlin/load/java/components/JavaSourceElementImpl
+Event: 3.535 loading class org/jetbrains/kotlin/load/java/components/JavaSourceElementImpl done
+Event: 3.536 loading class org/jetbrains/kotlin/load/java/lazy/LazyJavaTypeParameterResolver
+Event: 3.536 loading class org/jetbrains/kotlin/load/java/lazy/LazyJavaTypeParameterResolver done
+Event: 3.536 loading class org/jetbrains/kotlin/load/java/lazy/LazyJavaTypeParameterResolver$resolve$1
+Event: 3.536 loading class org/jetbrains/kotlin/load/java/lazy/LazyJavaTypeParameterResolver$resolve$1 done
+Event: 3.537 loading class org/jetbrains/kotlin/load/java/structure/impl/JavaClassImpl
+Event: 3.537 loading class org/jetbrains/kotlin/load/java/structure/impl/JavaClassImpl done
+Event: 3.537 loading class org/jetbrains/kotlin/load/java/structure/impl/JavaAnnotationOwnerImpl
+Event: 3.537 loading class org/jetbrains/kotlin/load/java/structure/impl/JavaAnnotationOwnerImpl done
+
+
+Dynamic libraries:
+0x00007ff66d420000 - 0x00007ff66d45e000 	C:\Java\jdk-10.0.2\bin\java.exe
+0x00007ffeebfe0000 - 0x00007ffeec1d0000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffeac530000 - 0x00007ffeac544000 	C:\Program Files\AVAST Software\Avast\aswhook.dll
+0x00007ffeebb80000 - 0x00007ffeebc32000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffee99f0000 - 0x00007ffee9c93000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffeeacb0000 - 0x00007ffeead53000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffeebae0000 - 0x00007ffeebb7e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffeebcf0000 - 0x00007ffeebd87000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffeea240000 - 0x00007ffeea360000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffeebdf0000 - 0x00007ffeebf84000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffee9d20000 - 0x00007ffee9d41000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffeea510000 - 0x00007ffeea536000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffee9e00000 - 0x00007ffee9f94000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffee9ff0000 - 0x00007ffeea08e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffee9020000 - 0x00007ffee911a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffec8210000 - 0x00007ffec8495000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.657_none_e6c5b579130e3898\COMCTL32.dll
+0x00007ffeeae40000 - 0x00007ffeeb176000 	C:\WINDOWS\System32\combase.dll
+0x00007ffee9ca0000 - 0x00007ffee9d20000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffee2c10000 - 0x00007ffee2c1a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffeeb190000 - 0x00007ffeeb1be000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffeb6640000 - 0x00007ffeb672f000 	C:\Java\jdk-10.0.2\bin\msvcr120.dll
+0x00007ffebdad0000 - 0x00007ffebdb76000 	C:\Java\jdk-10.0.2\bin\msvcp120.dll
+0x000000006a4e0000 - 0x000000006af50000 	C:\Java\jdk-10.0.2\bin\server\jvm.dll
+0x00007ffeebf90000 - 0x00007ffeebf98000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffed10f0000 - 0x00007ffed10f9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffeea540000 - 0x00007ffeea5af000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffee5c00000 - 0x00007ffee5c24000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffee5b80000 - 0x00007ffee5bad000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffee9fa0000 - 0x00007ffee9fea000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffee5c60000 - 0x00007ffee5c6f000 	C:\Java\jdk-10.0.2\bin\verify.dll
+0x00007ffedf550000 - 0x00007ffedf744000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffee0110000 - 0x00007ffee013a000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffee0c40000 - 0x00007ffee0c67000 	C:\Java\jdk-10.0.2\bin\java.dll
+0x00007ffee5990000 - 0x00007ffee59a6000 	C:\Java\jdk-10.0.2\bin\zip.dll
+0x00007ffee5920000 - 0x00007ffee592a000 	C:\Java\jdk-10.0.2\bin\jimage.dll
+0x00007ffeeb1c0000 - 0x00007ffeeb8a5000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffeebc40000 - 0x00007ffeebce9000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffee9270000 - 0x00007ffee99ef000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffee8f30000 - 0x00007ffee8f4f000 	C:\WINDOWS\System32\profapi.dll
+0x00007ffee8ee0000 - 0x00007ffee8f2a000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffee8eb0000 - 0x00007ffee8ec0000 	C:\WINDOWS\System32\UMPDC.dll
+0x00007ffeeb920000 - 0x00007ffeeb972000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffee8ec0000 - 0x00007ffee8ed1000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffee9d50000 - 0x00007ffee9d67000 	C:\WINDOWS\System32\cryptsp.dll
+0x00007ffee58d0000 - 0x00007ffee58ea000 	C:\Java\jdk-10.0.2\bin\net.dll
+0x00007ffedcd20000 - 0x00007ffedce10000 	C:\WINDOWS\SYSTEM32\WINHTTP.dll
+0x00007ffee8720000 - 0x00007ffee8787000 	C:\WINDOWS\system32\mswsock.dll
+0x00007ffee1940000 - 0x00007ffee1951000 	C:\Java\jdk-10.0.2\bin\nio.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Java\jdk-10.0.2\bin;C:\WINDOWS\SYSTEM32;C:\Program Files\AVAST Software\Avast;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.657_none_e6c5b579130e3898;C:\Java\jdk-10.0.2\bin\server
+
+VM Arguments:
+java_command: org.jetbrains.kotlin.cli.jvm.K2JVMCompiler -Xallow-no-source-files -classpath C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-android-extensions-runtime\1.3.61\289bdf25b4886749e040c7a7d3aab8a57f85c631\kotlin-android-extensions-runtime-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.3.61\70dffc5f8ac5ea7c34f30deac5b9d8b1d48af066\kotlin-stdlib-jdk7-1.3.61.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e779d7468482f4d9768199c63565ff04\core-ktx-1.2.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\6d3a4a496c75cb90d3917fc3768052f6\anko-sdk15-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\7d2a8fbbf28fd8b998bd80ef22f4e022\jetified-anko-recyclerview-v7-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b74f53ca7f7946b6a71604c11e76d63f\jetified-anko-recyclerview-v7-coroutines-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\c85c2b87149d550ffcfb20d750fe80e7\jetified-anko-cardview-v7-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\267513d97432d73bc52313d48529bd80\anko-sqlite-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\02d8b034cf344d876b04c9870e559c4a\jetified-anko-appcompat-v7-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\aa62daaedd502fcb8eac67abc6572974\jetified-anko-support-v4-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e8326b2cf13d64a2516c9320292ee7f4\anko-appcompat-v7-commons-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\15b1e475fe3e1d1feb4cfda0ee264142\anko-support-v4-commons-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\6c21c34054206fcc9215d68361418bc1\anko-commons-0.10.8-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ff4dbae6f7a461e412fd2cad350dd381\preference-ktx-1.1.0-api.jar;C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\1292a9a869e88e2e03
+java_class_path (initial): C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-embeddable\1.3.61\c35c0833d5a1e3d229359758482c480306724618\kotlin-compiler-embeddable-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-reflect\1.3.61\2e07c9a84c9e118efb70eede7e579fd663932122\kotlin-reflect-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.3.61\4702105e97f7396ae41b113fdbdc180ec1eb1e36\kotlin-stdlib-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-script-runtime\1.3.61\e5feb39c8de63dcbdc1154b34ca4413874231605\kotlin-script-runtime-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-daemon-embeddable\1.3.61\4de83e41a92c8395d89ab2e81d26b788ba163824\kotlin-daemon-embeddable-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.intellij.deps\trove4j\1.0.20181211\216c2e14b070f334479d800987affe4054cd563f\trove4j-1.0.20181211.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.3.61\65abb71d5afb850b68be03987b08e2c864ca3110\kotlin-stdlib-common-1.3.61.jar;C:\Users\Abdul\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar
+Launcher Type: SUN_STANDARD
+
+Logging:
+Log output configuration:
+#0: stdout all=warning uptime,level,tags
+#1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Java\jdk-10.0.2
+PATH=C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Users\Abdul\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\11\bin;C:\Java\jdk-10.0.2;C:\BigData\hadoop-2.9.1;C:\BigData\hadoop-2.9.1\sbin;C:\BigData\hadoop-2.9.1\bin;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Abdul\AppData\Local\GitHubDesktop\bin;C:\Users\Abdul\AppData\Local\Microsoft\WindowsApps;C:\Users\Abdul\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\heroku\bin;C:\Users\Abdul\AppData\Roaming\npm;C:\Java\jdk-10.0.2\bin;C:\BigData\hadoop-2.9.1;C:\BigData\hadoop-2.9.1\bin;C:\BigData\hadoop-2.9.1\sbin;C:\adb;C:\Users\Abdul\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Abdul\AppData\Local\Programs\Microsoft VS Code\bin;
+USERNAME=Abdul
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, physical 8253668k(723012k free), swap 10350820k(5896k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (10.0.2+13) for windows-amd64 JRE (10.0.2+13), built on Jun 28 2018 01:57:56 by "mach5one" with MS VC++ 12.0 (VS2013)
+
+END.
